@@ -1,0 +1,30 @@
+useDynLib(robustarima, .registration=TRUE, .fixes = "F_")
+
+import(splusTimeSeries)
+importFrom("splusTimeSeries", "timeSeries")
+
+importFrom("splusTimeDate", "timeDate")
+
+importFrom("methods", "is")
+
+importFrom("stats", "acf", "coef", "delete.response", "model.extract",
+  "model.matrix", "na.omit", "pt", "qqnorm", "terms")
+
+importFrom("utils", "menu")
+
+export(
+  arima.rob
+)
+S3method(coef, arima.rob)
+S3method(predict, arima.rob)
+S3method(print, arima.rob)
+S3method(summary, arima.rob)
+S3method(vcov, arima.rob)
+S3method(print, summary.arima.rob)
+
+export(
+  outliers
+)
+S3method(print, outliers)
+S3method(summary, outliers)
+S3method(print, summary.outliers)
