@@ -3,8 +3,13 @@ Type: Package
 Title: Robust ARIMA Modeling
 Imports: methods, splusTimeDate, splusTimeSeries
 Version: 0.2.6
-Author: TIBCO Software Inc.
-Maintainer: Stephen Kaluzny <spkaluzny@gmail.com>
+Authors@R:
+    c(person(given = "Stephen",
+           family = "Kaluzny",
+           role = c("aut", "cre"),
+           email = "spkaluzny@gmail.com"),
+      person(given = "TIBCO Software Inc.",
+           role=c("aut", "cph")))
 Description: Functions for fitting a linear regression model with ARIMA
   errors using a filtered tau-estimate.
 License: BSD_3_clause + file LICENSE
