@@ -13,7 +13,8 @@ importFrom("stats", "acf", "coef", "delete.response", "model.extract",
 importFrom("utils", "menu")
 
 export(
-  arima.rob
+  arima.rob,
+  arima.rob.fit
 )
 S3method(coef, arima.rob)
 S3method(predict, arima.rob)

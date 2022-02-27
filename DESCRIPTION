@@ -2,7 +2,7 @@ Package: robustarima
 Type: Package
 Title: Robust ARIMA Modeling
 Imports: methods, splusTimeDate, splusTimeSeries
-Version: 0.2.6
+Version: 0.2.7
 Authors@R:
     c(person(given = "Stephen",
            family = "Kaluzny",

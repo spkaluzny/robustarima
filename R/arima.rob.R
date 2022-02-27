@@ -36,8 +36,8 @@ function(formula, data, contrasts=NULL, start=NULL, end=NULL,
   call = match.call()
   m = match.call(expand.dots=TRUE)
   m$iter = m$innov.outlier = m$critv = NULL
-  m[[1]] = as.name("arima.rob.fit")
-  reg.rr = eval(m)
+  m[[1]] = quote(robustarima::arima.rob.fit)
+  reg.rr = if (missing(data)) eval(m, envir=environment(formula)) else eval(m, envir=data, enclos=environment(formula))
   reg.rr$outliers = outliers.rr(reg.rr, innov.outlier, critv)
   y.cleaned = outliers.clean(reg.rr$outliers, reg.rr$y)
   if (iter) {
@@ -91,10 +91,10 @@ function(formula, data, contrasts=NULL, start=NULL, end=NULL,
   mm[[1]] = as.name("model.frame")
   isTS = FALSE
   if (missing(data)) {
-    if (is(tmp <- eval(formula[[2]]), "timeSeries")) {
+    if (is(tmp <- eval(formula[[2]], envir=environment(formula)), "timeSeries")) {
       isTS = TRUE
       pos = positions(tmp)
-      formula[[2]] = call("seriesData", formula[[2]])
+      formula[[2]] = bquote(splusTimeSeries::seriesData(.(f2)), list(f2=formula[[2]]))
     }
   }
   else {
@@ -118,7 +118,7 @@ function(formula, data, contrasts=NULL, start=NULL, end=NULL,
 ##
   Terms = terms(formula)
   mm$formula = formula
-  mm = eval(mm, sys.parent())
+  mm = eval(mm,  environment(formula))
   y = model.extract(mm, "response")
   if (!is.null(y) && any(is.na(y))) 
     stop("There are missing data in response.") 
