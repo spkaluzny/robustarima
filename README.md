@@ -10,7 +10,7 @@ This code was originally available in S-PLUS.
 
 You can install the latest released version from CRAN with:
 ```r
-installpackages("robustarima")
+install.packages("robustarima")
 ```
 
 Install the latest development version from GitHub with:
