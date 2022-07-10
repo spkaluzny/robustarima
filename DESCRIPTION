@@ -8,6 +8,9 @@ Authors@R:
            family = "Kaluzny",
            role = c("aut", "cre"),
            email = "spkaluzny@gmail.com"),
+      person(given = "Bill",
+           family = "Dunlap",
+           role = "ctb"),
       person(given = "TIBCO Software Inc.",
            role=c("aut", "cph")))
 Description: Functions for fitting a linear regression model with ARIMA
