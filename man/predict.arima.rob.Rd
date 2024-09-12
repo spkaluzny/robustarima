@@ -43,7 +43,6 @@ the predicted values.
 }
 \item{std.err}{
 the pointwise standard errors for the predictions (if \code{se.fit=TRUE}).
-% an object of class \code{"forecast"}. See \code{forecast.object} for details.
 }
 }
 \details{

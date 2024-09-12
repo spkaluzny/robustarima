@@ -111,10 +111,6 @@ extra arguments passed to or from other methods.
 \value{
 an object of class \code{"arima.rob"}.
 See \code{link{arima.rob.object}}.
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
 }
 \seealso{
 \code{\link{arima.rob}}
@@ -122,4 +118,4 @@ See \code{link{arima.rob.object}}.
 \examples{
 # See arima.rob for example
 }
-% \keyword{internal}
+\keyword{internal}
