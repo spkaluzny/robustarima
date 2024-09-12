@@ -1,5 +1,6 @@
 \name{newtaxes.dat}
 \alias{newtaxes.dat}
+\docType{data}
 \title{
   Monthly Import Taxes of Argentina
 }
@@ -18,5 +19,3 @@ The \code{newtaxes.dat} data frame has 10 rows and 1 column.
 The sample runs from January to October 1992.
 }
 \keyword{sysdata}
-% docclass is function
-% Converted by mySd2Rd version 47442.
