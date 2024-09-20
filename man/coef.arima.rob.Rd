@@ -23,8 +23,9 @@ extra arguments passed to or from other methods.
 The coef method here ignore these arguments.
 }
 }
+\value{
+a named vector of the model coefficients.
+}
 \keyword{ts}
 \keyword{robust}
 \keyword{regression}
-% docclass is function
-% Converted by mySd2Rd version 47442.

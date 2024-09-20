@@ -158,6 +158,9 @@ Estimation of time series parameters in the presence of outliers.
 \emph{Technometrics},
 30:193-204.
 
+Maronna, R. A., Martin, R. D., Yohai, V. J., Salibián-Barrera. M. (2017).
+\emph{Robust Statistics: Theory and Practice (with R)}, 2nd Edition, Wiley.
+
 Martin, R. D., Samarov, A., and Vandaele, W. (1983).
 Robust methods for ARIMA models. in
 \emph{Applied Time Series Analysis of Economic Data},

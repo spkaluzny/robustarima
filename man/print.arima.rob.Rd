@@ -26,9 +26,11 @@ the number of digits to display.
 extra arguments passed to or from other methods.
 }
 }
+\value{
+invisibly returns \code{x}.
+Typically called for the printing side effect.
+}
 \seealso{
 \code{\link{print}}.
 }
 \keyword{print}
-% docclass is function
-% Converted by mySd2Rd version 47442.
